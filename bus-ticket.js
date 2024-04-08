@@ -61,7 +61,7 @@ function changeBgColor(event) {
     let discountAmount = 0;
     if (clickCount < 4) {
       alert('Minimum 4 tickets must be selected to apply discount.');
-      return; // Exit the function early if conditions are not met
+      return; 
     }
     if (clickCount === 4) {
       if (enteredCode === 'NEW15') {
