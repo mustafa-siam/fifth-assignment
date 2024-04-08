@@ -85,15 +85,16 @@ function changeBgColor(event) {
   });
   const nextBtn = document.getElementById('nextBtn');
   const phoneNumberInput = document.getElementById('tel');
+  
   nextBtn.addEventListener('click', function(event) {
     
     event.preventDefault();
   
-    if (clickCount === 0) {
+    if (clickCount<1) {
       alert('Please select at least one seat.');
       return;
     }
-    if (phoneNumberInput.value.trim() === '') {
+   if (phoneNumberInput.value.trim() === '') {
       alert('Please enter your phone number.');
       return;
     }
@@ -105,3 +106,4 @@ function changeBgColor(event) {
 buttons.forEach(button => {
   button.addEventListener('click', changeBgColor);
 });
+
